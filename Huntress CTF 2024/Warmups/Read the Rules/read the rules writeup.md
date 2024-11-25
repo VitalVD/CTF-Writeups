@@ -7,7 +7,7 @@
 
 ## Solve 
 
-![Read the Rules](../images/read-the-rules.png)
+![Read the Rules](Huntress%20CTF%202024/Warmups/images/read-the-rules.png)
 
 
 
