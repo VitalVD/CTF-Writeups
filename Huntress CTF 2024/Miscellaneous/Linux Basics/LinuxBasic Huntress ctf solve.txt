@@ -1,0 +1,270 @@
+dheeraj@Dheerajs-MacBook-Pro ~ % nc challenge.ctf.games 32083          
+bash: cannot set terminal process group (1): Not a tty
+bash: no job control in this shell
+
+
+ _     _                    ____            _          
+| |   (_)_ __  _   ___  __ | __ )  __ _ ___(_) ___ ___ 
+| |   | | '_ \| | | \ \/ / |  _ \ / _` / __| |/ __/ __|
+| |___| | | | | |_| |>  <  | |_) | (_| \__ \ | (__\__ \
+|_____|_|_| |_|\__,_/_/\_\ |____/ \__,_|___/_|\___|___/
+                                                       
+
+                Welcome to Linux Basics!
+
+You're expected to answer a series of questions to get the flag.
+To view the questions, and answer them, you'll use the `answer` tool.
+Display questions: `answer`
+Answer a question: `answer x` where x is question number.
+
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 
+answer 
+Question 0: What's your home directory?
+Question 1: Search the man pages. What command would you use to generate random permutations?
+Question 2: On what day was /home/user/myfile.txt modified? Use the date format 2019-12-31
+Question 3: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number.
+Question 4: What user owns the file /home/user/myfile.txt
+Question 5: What's the 3-digit octal permissions of the file /home/user/myfile.txt? (e.g 777)
+Question 6: What is the user id of 'admin'?
+Question 7: There is a user 'john' on the system. Can they write to /home/user/myfile.txt? (yes/no)
+Question 8: Can the 'admin' user execute /home/user/myfile.txt? (yes/no)
+Question 9: Which user on the system, except for you, root, admin and john, can execute /home/user/myfile.txt?
+Question 10: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it?
+
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ pwd    
+pwd
+/home/user
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 0
+answer 0
+Question: What's your home directory? /home/user/
+/home/user/
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 0
+answer 0
+Question: What's your home directory? /home/user
+/home/user
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ shuf -i 1-10
+shuf -i 1-10
+10
+4
+1
+9
+7
+2
+6
+5
+8
+3
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 1
+answer 1
+Question: Search the man pages. What command would you use to generate random permutations? shuf
+shuf
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ stat /home/user/myfile.txt
+stat /home/user/myfile.txt
+  File: /home/user/myfile.txt
+  Size: 22200     	Blocks: 48         IO Block: 4096   regular file
+Device: 1000f5h/1048821d	Inode: 537854      Links: 1
+Access: (0754/-rwxr-xr--)  Uid: (    0/    root)   Gid: ( 1338/   admin)
+Access: 1997-08-29 02:13:00.000000000 -0700
+Modify: 1997-08-29 02:13:00.000000000 -0700
+Change: 2024-10-18 02:45:07.385214290 -0700
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ anwser 2
+anwser 2
+bash: anwser: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 
+answer 
+Question 2: On what day was /home/user/myfile.txt modified? Use the date format 2019-12-31
+Question 3: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number.
+Question 4: What user owns the file /home/user/myfile.txt
+Question 5: What's the 3-digit octal permissions of the file /home/user/myfile.txt? (e.g 777)
+Question 6: What is the user id of 'admin'?
+Question 7: There is a user 'john' on the system. Can they write to /home/user/myfile.txt? (yes/no)
+Question 8: Can the 'admin' user execute /home/user/myfile.txt? (yes/no)
+Question 9: Which user on the system, except for you, root, admin and john, can execute /home/user/myfile.txt?
+Question 10: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it?
+
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 2
+answer 2
+Question: On what day was /home/user/myfile.txt modified? Use the date format 2019-12-31 1997-08-29
+1997-08-29
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ du -k /home/user/myfile.txt
+du -k /home/user/myfile.txt
+24	/home/user/myfile.txt
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 3
+answer 3
+Question: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number. 24 kilobytes
+24 kilobytes
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ ilobytes
+bash: ilobytes: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 3
+answer 3
+Question: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number. 24 kilobytes
+24 kilobytes
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ ilobytes
+bash: ilobytes: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 3
+answer 3
+Question: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number. 24
+24
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 3 
+answer 3 
+Question: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number. 23
+23
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ du -k /home/user/myfile.txt
+du -k /home/user/myfile.txt
+24	/home/user/myfile.txt
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ stat -c%s /home/user/myfile.txt
+<6f48489cc4-n9nxn:~$ stat -c%s /home/user/myfile.txt
+22200
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ echo $(( $(stat -c%s /home/user/myfile.txt) / 1024 ))
+<ho $(( $(stat -c%s /home/user/myfile.txt) / 1024 ))
+21
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 3
+answer 3
+Question: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number. 21
+21
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 3
+answer 3
+Question: How big is /home/user/myfile.txt, in kilobytes? Round to the nearest whole number. 22
+22
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ du -k /home/user/myfile.txt
+du -k /home/user/myfile.txt
+24	/home/user/myfile.txt
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ ls -l /home/user/myfile.txt
+ls -l /home/user/myfile.txt
+-rwxr-xr--    1 root     admin        22200 Aug 29  1997 /home/user/myfile.txt
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 4 
+answer 4 
+Question: What user owns the file /home/user/myfile.txt root
+root
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ stat -c "%a" /home/user/myfile.txt
+<8489cc4-n9nxn:~$ stat -c "%a" /home/user/myfile.txt
+754
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 5
+answer 5
+Question: What's the 3-digit octal permissions of the file /home/user/myfile.txt? (e.g 777) 754
+754
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ id -u admin
+id -u admin
+1338
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 6 
+answer 6 
+Question: What is the user id of 'admin'? 1338
+1338
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ ls -l /home/user/myfile.txt 
+<6c-6f48489cc4-n9nxn:~$ ls -l /home/user/myfile.txt 
+-rwxr-xr--    1 root     admin        22200 Aug 29  1997 /home/user/myfile.txt
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ cat /etc/passwd
+cat /etc/passwd
+root:x:0:0:root:/root:/bin/sh
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/mail:/sbin/nologin
+news:x:9:13:news:/usr/lib/news:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucppublic:/sbin/nologin
+cron:x:16:16:cron:/var/spool/cron:/sbin/nologin
+ftp:x:21:21::/var/lib/ftp:/sbin/nologin
+sshd:x:22:22:sshd:/dev/null:/sbin/nologin
+games:x:35:35:games:/usr/games:/sbin/nologin
+ntp:x:123:123:NTP:/var/empty:/sbin/nologin
+guest:x:405:100:guest:/dev/null:/sbin/nologin
+nobody:x:65534:65534:nobody:/:/sbin/nologin
+admin:x:1338:1338:Linux User,,,:/:/bin/false
+user:x:1337:1338:Linux User,,,:/home/user:/bin/bash
+john:x:1001:1338:Linux User,,,:/:/bin/false
+dave:x:1002:1002:Linux User,,,:/:/bin/false
+rose:x:1003:1338:Linux User,,,:/:/bin/false
+jade:x:1004:1000:Linux User,,,:/:/bin/false
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 
+answer 
+Question 7: There is a user 'john' on the system. Can they write to /home/user/myfile.txt? (yes/no)
+Question 8: Can the 'admin' user execute /home/user/myfile.txt? (yes/no)
+Question 9: Which user on the system, except for you, root, admin and john, can execute /home/user/myfile.txt?
+Question 10: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it?
+
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 7 
+answer 7 
+Question: There is a user 'john' on the system. Can they write to /home/user/myfile.txt? (yes/no) yes
+yes
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 7    
+answer 7 
+Question: There is a user 'john' on the system. Can they write to /home/user/myfile.txt? (yes/no) no
+no
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 8 
+answer 8 
+Question: Can the 'admin' user execute /home/user/myfile.txt? (yes/no) yes
+yes
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ anwser 9 
+anwser 9 
+bash: anwser: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 9 
+answer 9 
+Question: Which user on the system, except for you, root, admin and john, can execute /home/user/myfile.txt? rose
+rose
+Nice Job!
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 10 
+answer 10 
+Question: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it? 
+
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ file myfile.txt 
+file myfile.txt 
+myfile.txt: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 807x114, components 3
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 10 
+answer 10 
+Question: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it?ˇJPEG image data
+JPEG image data
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ mage data
+bash: mage: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 10           
+answer 10 
+Question: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it? JPEG image data
+JPEG image data
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ mage data
+bash: mage: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 10 
+answer 10 
+Question: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it? JPEG 
+JPEG 
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 10 
+answer 10 
+Question: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it? image data
+image data
+Wrong Answer.
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ ata
+bash: ata: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ answer 10 
+answer 10 
+Question: /home/user/myfile.txt looks like a txt file, but it actually isn't. What kind of file is it? jpeg image data 
+jpeg image data
+Nice Job!
+Here's the flag: 8873fe66f8e7a6019d7d71261864f6c5  -
+
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ mage data
+bash: mage: command not found
+linux-basics-8d6cba8bf8b0796c-6f48489cc4-n9nxn:~$ exit 
+exit 
+logout
+dheeraj@Dheerajs-MacBook-Pro ~ % 
