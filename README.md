@@ -1,5 +1,5 @@
 # CTF-Writeups
 
-This Repository contains all the CTF Writeups that I have solved so far. 
+Challenges Solved in Huntress 2024 CTF. 
    
 VialVD
